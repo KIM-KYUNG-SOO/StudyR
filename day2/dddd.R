@@ -110,5 +110,11 @@ for (index in 1:cnt){
 
 	fileName = paste('./저장/',sido[index],'.csv',sep='')
 	write.csv(tmp,fileName)
-}
-getwd()
+} 
+
+names(df1)
+colbunho = 2
+folderName = paste('./저장/', names(df)[colbunho],sep='')
+dir.create(folderName)
+
+saveFile = paste('./저장/', folderName)
